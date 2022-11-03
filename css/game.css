@@ -1,0 +1,137 @@
+/* Question Card */
+.question-card__progress-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.8rem 0 1.6rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.question-card__progress {
+  width: 100%;
+  display: block;
+  height: 8px;
+  margin-top: 0.8rem;
+  border-radius: 4px;
+  background: #ddd;
+  position: relative;
+  overflow: hidden;
+}
+
+.question-card__progress .--value {
+  position: absolute;
+  left: 0;
+  height: 8px;
+  width: 100%;
+  display: inline-block;
+  background: #de6262;
+  transition: all 0.3s;
+}
+
+.question-card__q-number {
+  display: block;
+  font-size: 1.6rem;
+  margin-top: 3rem;
+  margin-bottom: 0.4rem;
+  color: #bbb;
+  font-weight: bold;
+}
+
+.question-card__q-title {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  font-weight: 400;
+  display: block;
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.choice-container {
+  display: flex;
+  margin-bottom: 0.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+  font-weight: 300;
+  border: 0.1rem solid rgba(245, 93, 73, 0.168);
+  background-color: white;
+}
+
+.choice-container:hover {
+  cursor: pointer;
+  box-shadow: 0 0.2rem 1.4rem 0 rgba(245, 93, 73, 0.235);
+  transform: translateY(-0.1rem);
+  transition: transform 150ms;
+}
+
+.choice-prefix {
+  padding: 1.5rem 2.5rem;
+  background-color: #de6262;
+  color: white;
+}
+
+.choice-text {
+  padding: 1.5rem;
+  width: 100%;
+}
+
+.correct {
+  border: #28a745 solid 0.1rem;
+  background-color: rgba(0, 255, 0, 10%);
+}
+
+.incorrect {
+  border: #dc3545 solid 0.1rem;
+  background-color: rgba(255, 0, 0, 10%);
+}
+
+.question-card-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+  position: sticky;
+  width: 100%;
+  top: 100%;
+  left: 0;
+}
+
+.score-item {
+  display: flex;
+  justify-content: space-between;
+  width: 25%;
+}
+
+.score-prefix {
+  text-align: center;
+  font-size: 2rem;
+}
+
+/* HUD */
+/* #hud {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hud-prefix {
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hud-main-text {
+    text-align: center;
+}
+
+#progressBar {
+    width: 20rem;
+    height: 4rem;
+    border: 0.3rem solid #56a5eb;
+    margin-top: 1.5rem;
+}
+
+#progressBarFull {
+    height: 3.4rem;
+    background-color: #56a5eb;
+    width: 0%;
+} */

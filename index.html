@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz Game</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="center-card quiz-details">
+        <div id="home">
+          <img
+            src="./img/publicdomainq-passbook-bank-man.png"
+            alt="thinking kid"
+          />
+          <h1 class="quiz-details__title">Quiz Game</h1>
+          <p class="quiz-details__description">
+            This quiz game is a fun way to test your general knowledge in
+            various topics
+          </p>
+          <div class="quiz-details__start-btn-wrapper">
+            <button id="btn-start" class="default-btn quiz-details__btn">
+              Start
+            </button>
+            <button id="btn-leaderboard" class="default-btn quiz-details__btn">
+              Leaderboard
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script>
+      const startBtn = document.getElementById('btn-start');
+      const leaderboardBtn = document.getElementById('btn-leaderboard');
+      startBtn.addEventListener('click', () => {
+        window.location.assign('./html/game.html');
+      });
+      leaderboardBtn.addEventListener('click', () => {
+        window.location.assign('./html/highScores.html');
+      });
+    </script>
+  </body>
+</html>
